@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Convert any text into Sans Forgetica for improved memory retention." />
+  <title>Sans Forgetica Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <noscript>
+    <div class="error">
+      JavaScript is required for this application to function correctly.
+    </div>
+  </noscript>
+
+  <main class="container">
+    <h1>Sans Forgetica Converter</h1>
+    <p class="subtitle">
+      Paste any text. It will be rendered using the Sans Forgetica font.
+    </p>
+
+    <textarea
+      id="inputText"
+      placeholder="Paste or type large text here (supports very large input)"
+      aria-label="Input text"
+      spellcheck="false"
+    ></textarea>
+
+    <div class="controls">
+      <button id="renderBtn">Render</button>
+      <button id="clearBtn">Clear</button>
+      <button id="copyBtn">Copy</button>
+    </div>
+
+    <section class="output-wrapper">
+      <div id="status" class="status"></div>
+      <pre id="outputText" aria-live="polite"></pre>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
